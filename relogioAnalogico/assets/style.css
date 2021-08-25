@@ -1,0 +1,128 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: orange;
+  padding-top: 5rem;
+}
+.clock{
+  text-align: center;
+}
+.clock h1{
+  margin-bottom: 1rem;
+}
+.clock img{
+  clip-path: circle();
+}
+.pointers {
+  width: 100%;
+  height: 100%;
+  padding-left: 50%;
+  padding-top: 62%;
+  margin-top: -75%;
+}
+.p {
+  transform-origin: left;
+  transform: rotate(0deg);
+  border-radius: 50%;
+  position: absolute;
+}
+.p_s {
+  width: 100px;
+  height: 3px;
+  background-color: #F00;
+}
+.p_m {
+  width: 100px;
+  height: 4px;
+  background-color: #000;
+}
+.p_h {
+  width: 70px;
+  height: 6px;
+  background-color: #000;
+}
+.socket {
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: -5px;
+  margin-left: -5px;
+}
+footer{
+  margin-top:12rem;
+}
+.social{
+  text-align: center;
+  margin-top: 0.3rem;
+}
+.social a img{
+  width: 2rem;
+  margin: 0 0.3rem;
+}
+
+/*RESPOSIVO*/
+@media(max-width:1024px){
+  .pointers {
+    padding-top: 58%;
+  }
+}
+
+@media(max-width:768px){
+  .pointers {
+    padding-top: 53%;
+  }
+}
+
+@media(max-width:425px){
+  body{
+    padding-top: 1rem;
+  }
+  .pointers {
+    padding-top: 35%;
+  }
+}
+
+@media(max-width:375px){
+  
+  .pointers {
+    padding-top: 30%;
+  }
+}
+@media(max-width:320px){
+ 
+  .clock img{
+    width: 18rem;
+  }
+  .pointers {
+    padding-top: 28%;
+  }
+  .p_s {
+    width: 80px;
+    height: 3px;
+  }
+  .p_m {
+    width: 80px;
+    height: 4px;
+  }
+  .p_h {
+    width: 60px;
+    height: 6px;
+  }
+  .socket {
+    width: 15px;
+    height: 15px;
+  }
+  footer{
+    margin-top:10rem;
+  }
+}
